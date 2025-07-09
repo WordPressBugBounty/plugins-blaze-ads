@@ -3,7 +3,7 @@
  * Plugin Name: Blaze Ads
  * Plugin URI: https://github.com/automattic/blaze-ads
  * Description: One-click and you're set! Create ads for your products and store simpler than ever. Get started now and watch your business grow.
- * Version: 0.6.0
+ * Version: 0.7.0
  * Author: Automattic
  * Author URI: https://automattic.com/
  * Text Domain: blaze-ads
@@ -38,6 +38,12 @@ if ( ! $is_autoloading_ready ) {
  * Initialize the Jetpack functionalities: connection, etc.
  */
 function blazeads_jetpack_init() {
+	$connection_version = Automattic\Jetpack\Connection\Package_Version::PACKAGE_VERSION;
+
+	$custom_content = version_compare( $connection_version, '6.1.0', '>' ) ?
+		'blazeads_jetpack_idc_custom_content' :
+		blazeads_jetpack_idc_custom_content();
+
 	$jetpack_config = new Automattic\Jetpack\Config();
 	$jetpack_config->ensure(
 		'connection',
@@ -50,7 +56,7 @@ function blazeads_jetpack_init() {
 	$is_woo_store = Blaze_Dependency_Service::is_woo_core_active();
 	$idc_config   = array(
 		'slug'          => 'blaze-ads',
-		'customContent' => blazeads_jetpack_idc_custom_content(),
+		'customContent' => $custom_content,
 		'admin_page'    => $is_woo_store ? '/wp-admin/admin.php?page=wp-blaze' : '/wp-admin/tools.php?page=wp-blaze',
 		'priority'      => 5,
 	);

@@ -2,9 +2,9 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Blaze Ads 0.6.0\n"
+"Project-Id-Version: Blaze Ads 0.7.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/blaze-ads\n"
-"POT-Creation-Date: 2025-01-08 18:35:50+00:00\n"
+"POT-Creation-Date: 2025-07-02 14:42:18+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,15 +13,15 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: node-wp-i18n 1.2.7\n"
 
-#: blaze-ads.php:77
+#: blaze-ads.php:83
 msgid "Safe Mode"
 msgstr ""
 
-#: blaze-ads.php:78 blaze-ads.php:101
+#: blaze-ads.php:84 blaze-ads.php:107
 msgid "Safe Mode activated"
 msgstr ""
 
-#: blaze-ads.php:81
+#: blaze-ads.php:87
 #. translators: %s: Blaze Ads.
 msgid ""
 "We’ve detected that you have duplicate sites connected to %s. When Safe "
@@ -31,29 +31,29 @@ msgid ""
 "creating a staging site for testing. <safeModeLink>Learn more</safeModeLink>"
 msgstr ""
 
-#: blaze-ads.php:89
+#: blaze-ads.php:95
 #. translators: %s: Blaze Ads.
 msgid "%s connection successfully transferred"
 msgstr ""
 
-#: blaze-ads.php:94
+#: blaze-ads.php:100
 #. translators: %s: Blaze Ads.
 msgid "Safe Mode has been deactivated and %s is fully functional."
 msgstr ""
 
-#: blaze-ads.php:97
+#: blaze-ads.php:103
 msgid "Transfer connection"
 msgstr ""
 
-#: blaze-ads.php:98
+#: blaze-ads.php:104
 msgid "Transfer your connection"
 msgstr ""
 
-#: blaze-ads.php:99 blaze-ads.php:100
+#: blaze-ads.php:105 blaze-ads.php:106
 msgid "Create a new connection"
 msgstr ""
 
-#: blaze-ads.php:104
+#: blaze-ads.php:110
 #. translators: %s: Blaze Ads.
 msgid ""
 "We’ve detected that you have duplicate sites connected to %s. When Safe "
@@ -64,12 +64,12 @@ msgid ""
 "issue. <safeModeLink>Learn more</safeModeLink>"
 msgstr ""
 
-#: blaze-ads.php:114
+#: blaze-ads.php:120
 #. translators: %s: Blaze Ads.
 msgid "%s Safe Mode"
 msgstr ""
 
-#: blaze-ads.php:119
+#: blaze-ads.php:125
 #. translators: %s: Blaze Ads.
 msgid ""
 "<strong>Notice:</strong> It appears that your 'wp-config.php' file might be "
@@ -78,7 +78,7 @@ msgid ""
 "URL.</dynamicSiteUrlSupportLink>"
 msgstr ""
 
-#: blaze-ads.php:145
+#: blaze-ads.php:151
 #. translators: %1$s: The current site domain name. %2$s: The original site
 #. domain name. Please keep hostname tags in your translation so that they can
 #. be formatted properly. %3$s: Blaze Ads.
@@ -88,7 +88,7 @@ msgid ""
 "from %3$s."
 msgstr ""
 
-#: blaze-ads.php:156
+#: blaze-ads.php:162
 #. translators: %1$s: The current site domain name. %2$s: The original site
 #. domain name. Please keep hostname tags in your translation so that they can
 #. be formatted properly. %3$s: Blaze Ads.
@@ -125,7 +125,7 @@ msgstr ""
 msgid "Update WordPress"
 msgstr ""
 
-#: includes/class-blaze-marketing-channel.php:100
+#: includes/class-blaze-marketing-channel.php:104
 msgid ""
 "Drive sales, and elevate your products to center stage, effortlessly. "
 "Witness your business flourishing in the blink of an eye."

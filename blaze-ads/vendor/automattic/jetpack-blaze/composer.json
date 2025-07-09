@@ -5,18 +5,19 @@
 	"license": "GPL-2.0-or-later",
 	"require": {
 		"php": ">=7.2",
-		"automattic/jetpack-assets": "^4.0.1",
-		"automattic/jetpack-connection": "^6.1.1",
-		"automattic/jetpack-constants": "^3.0.1",
-		"automattic/jetpack-plans": "^0.5.1",
-		"automattic/jetpack-redirect": "^3.0.1",
-		"automattic/jetpack-status": "^5.0.1",
-		"automattic/jetpack-sync": "^4.0.2"
+		"automattic/jetpack-assets": "^4.0.29",
+		"automattic/jetpack-connection": "^6.13.9",
+		"automattic/jetpack-constants": "^3.0.8",
+		"automattic/jetpack-plans": "^0.8.0",
+		"automattic/jetpack-redirect": "^3.0.7",
+		"automattic/jetpack-status": "^5.3.0",
+		"automattic/jetpack-sync": "^4.14.1"
 	},
 	"require-dev": {
-		"yoast/phpunit-polyfills": "^1.1.1",
-		"automattic/jetpack-changelogger": "^5.1.0",
-		"automattic/wordbless": "^0.4.2"
+		"yoast/phpunit-polyfills": "^4.0.0",
+		"automattic/jetpack-changelogger": "^6.0.5",
+		"automattic/jetpack-test-environment": "@dev",
+		"automattic/phpunit-select-config": "^1.0.3"
 	},
 	"suggest": {
 		"automattic/jetpack-autoloader": "Allow for better interoperability with other plugins that use this package."
@@ -28,10 +29,10 @@
 	},
 	"scripts": {
 		"phpunit": [
-			"./vendor/phpunit/phpunit/phpunit --colors=always"
+			"phpunit-select-config phpunit.#.xml.dist --colors=always"
 		],
 		"test-coverage": [
-			"php -dpcov.directory=. ./vendor/bin/phpunit --coverage-php \"$COVERAGE_DIR/php.cov\""
+			"php -dpcov.directory=. ./vendor/bin/phpunit-select-config phpunit.#.xml.dist --coverage-php \"$COVERAGE_DIR/php.cov\""
 		],
 		"test-php": [
 			"@composer phpunit"
@@ -45,9 +46,7 @@
 		"watch": [
 			"Composer\\Config::disableProcessTimeout",
 			"pnpm run watch"
-		],
-		"post-install-cmd": "WorDBless\\Composer\\InstallDropin::copy",
-		"post-update-cmd": "WorDBless\\Composer\\InstallDropin::copy"
+		]
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
