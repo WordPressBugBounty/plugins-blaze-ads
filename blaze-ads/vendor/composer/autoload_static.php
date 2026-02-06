@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit3a5e5e1e1c80e7374a76b5f6c5064e36
+class ComposerStaticInit62c5674b13b215f50c0c3052443c68bd
 {
     public static $files = array (
         '3773ef3f09c37da5478d578e32b03a4b' => __DIR__ . '/..' . '/automattic/jetpack-assets/actions.php',
@@ -12,22 +12,22 @@ class ComposerStaticInit3a5e5e1e1c80e7374a76b5f6c5064e36
     );
 
     public static $prefixLengthsPsr4 = array (
-        'C' => 
+        'C' =>
         array (
             'Composer\\Installers\\' => 20,
         ),
-        'A' => 
+        'A' =>
         array (
             'Automattic\\Jetpack\\Autoloader\\' => 30,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Composer\\Installers\\' => 
+        'Composer\\Installers\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
-        'Automattic\\Jetpack\\Autoloader\\' => 
+        'Automattic\\Jetpack\\Autoloader\\' =>
         array (
             0 => __DIR__ . '/..' . '/automattic/jetpack-autoloader/src',
         ),
@@ -55,6 +55,7 @@ class ComposerStaticInit3a5e5e1e1c80e7374a76b5f6c5064e36
         'Automattic\\Jetpack\\Connection\\Connection_Assets' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/class-connection-assets.php',
         'Automattic\\Jetpack\\Connection\\Connection_Notice' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/class-connection-notice.php',
         'Automattic\\Jetpack\\Connection\\Error_Handler' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/class-error-handler.php',
+        'Automattic\\Jetpack\\Connection\\External_Storage' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/class-external-storage.php',
         'Automattic\\Jetpack\\Connection\\Initial_State' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/class-initial-state.php',
         'Automattic\\Jetpack\\Connection\\Manager' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/class-manager.php',
         'Automattic\\Jetpack\\Connection\\Manager_Interface' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/interface-manager.php',
@@ -72,6 +73,7 @@ class ComposerStaticInit3a5e5e1e1c80e7374a76b5f6c5064e36
         'Automattic\\Jetpack\\Connection\\SSO\\User_Admin' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/sso/class-user-admin.php',
         'Automattic\\Jetpack\\Connection\\Secrets' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/class-secrets.php',
         'Automattic\\Jetpack\\Connection\\Server_Sandbox' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/class-server-sandbox.php',
+        'Automattic\\Jetpack\\Connection\\Storage_Provider_Interface' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/interface-storage-provider.php',
         'Automattic\\Jetpack\\Connection\\Tokens' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/class-tokens.php',
         'Automattic\\Jetpack\\Connection\\Tokens_Locks' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/class-tokens-locks.php',
         'Automattic\\Jetpack\\Connection\\Traits\\WPCOM_REST_API_Proxy_Request' => __DIR__ . '/..' . '/automattic/jetpack-connection/src/traits/trait-wpcom-rest-api-proxy-request.php',
@@ -146,6 +148,7 @@ class ComposerStaticInit3a5e5e1e1c80e7374a76b5f6c5064e36
         'Automattic\\Jetpack\\Sync\\Modules\\WP_Super_Cache' => __DIR__ . '/..' . '/automattic/jetpack-sync/src/modules/class-wp-super-cache.php',
         'Automattic\\Jetpack\\Sync\\Modules\\WooCommerce' => __DIR__ . '/..' . '/automattic/jetpack-sync/src/modules/class-woocommerce.php',
         'Automattic\\Jetpack\\Sync\\Modules\\WooCommerce_HPOS_Orders' => __DIR__ . '/..' . '/automattic/jetpack-sync/src/modules/class-woocommerce-hpos-orders.php',
+        'Automattic\\Jetpack\\Sync\\Modules\\WooCommerce_Products' => __DIR__ . '/..' . '/automattic/jetpack-sync/src/modules/class-woocommerce-products.php',
         'Automattic\\Jetpack\\Sync\\Package_Version' => __DIR__ . '/..' . '/automattic/jetpack-sync/src/class-package-version.php',
         'Automattic\\Jetpack\\Sync\\Queue' => __DIR__ . '/..' . '/automattic/jetpack-sync/src/class-queue.php',
         'Automattic\\Jetpack\\Sync\\Queue\\Queue_Storage_Options' => __DIR__ . '/..' . '/automattic/jetpack-sync/src/sync-queue/class-queue-storage-options.php',
@@ -290,9 +293,9 @@ class ComposerStaticInit3a5e5e1e1c80e7374a76b5f6c5064e36
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit3a5e5e1e1c80e7374a76b5f6c5064e36::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit3a5e5e1e1c80e7374a76b5f6c5064e36::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit3a5e5e1e1c80e7374a76b5f6c5064e36::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit62c5674b13b215f50c0c3052443c68bd::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit62c5674b13b215f50c0c3052443c68bd::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit62c5674b13b215f50c0c3052443c68bd::$classMap;
 
         }, null, ClassLoader::class);
     }
